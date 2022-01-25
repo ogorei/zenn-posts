@@ -3,7 +3,7 @@ title: "VUEで３ヶ国語対応するアプリを作ってみよう！"
 emoji: "🔰"
 type: "tech"
 topics: ['vuejs','language','初心者']
-published: false
+published: true
 ---
 
 こんにちは！
