@@ -298,3 +298,7 @@ const messages = {
 ```
 
 お疲れさまでした！
+
+参考にしたサイト
+https://lokalise.com/blog/vue-i18n/
+https://qiita.com/mi_upto/items/6d76dcd2d2c09b1bcb88
