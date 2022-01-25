@@ -1,5 +1,5 @@
 ---
-title: "VUEで３ヶ国語対応するアプリを作ってみた"
+title: "VUEで３ヶ国語対応するアプリを作ってみよう！"
 emoji: "🔰"
 type: "tech"
 topics: ['vuejs','language','初心者']
@@ -7,7 +7,9 @@ published: false
 ---
 
 こんにちは！
-今日はVUEで作って３ヶ国語対応できる新型コロナトラッキングのアプリケーションを作りましょう。
+初心者向けのプロジェクトを紹介します。
+VUEで作って３ヶ国語対応できる新型コロナトラッキングのアプリケーションです。
+今回のプロジェクトでは全世界（Globalの部分）しか使わないのですが、こちらのAPIには２９５カ国の情報もあって、APIのデータの取得して表示する練習したい方ぜひぜひ使ってあげてください。
 
 ## 開発ツール
 VUE CLI(v.2)
@@ -114,9 +116,9 @@ componentsフォルダーに移動して、2つコンポネートを作成しま
 </template>
 
 <script>
-export default {
-  name: 'Test'
-}
+    export default {
+    name: 'Test'
+    }
 </script>
 ```
 
@@ -211,7 +213,8 @@ components
 <template>
   <div>
     <div class="shadow-md rounded bg-blue-100 p-10 text-center">
-      <h3 class="text-3xl font-bold mb-4 justify-center text-blue-900">{{$t("titles.cases")}}</h3>
+        <h3 class="text-3xl font-bold mb-4 justify-center text-blue-900">{{$t("titles.cases")}}
+        </h3>
       <div class="text-2xl mb-4">
         <span class="font-bold">{{$t("titles.newCases")}}</span> 
         {{addComma(stats.NewConfirmed)}} 
@@ -221,8 +224,10 @@ components
         {{addComma(stats.TotalConfirmed)}} 
       </div>
     </div>
+
     <div class="shadow-md rounded bg-blue-200 p-10 text-center">
-      <h3 class="text-3xl font-bold mb-4 justify-center text-blue-900">{{$t("titles.deaths")}}</h3>
+        <h3 class="text-3xl font-bold mb-4 justify-center text-blue-900">{{$t("titles.deaths")}}
+        </h3>
       <div class="text-2xl mb-4">
         <span class="font-bold">{{$t("titles.deathNum")}}</span> 
         {{addComma(stats.NewDeaths)}} 
@@ -232,6 +237,7 @@ components
         {{addComma(stats.TotalDeaths)}} 
       </div>
     </div>
+
   </div>
 </template>
 
