@@ -9,15 +9,20 @@ published: false
 こんにちは！
 今日はVUEで作って３ヶ国語対応できる新型コロナトラッキングのアプリケーションを作りましょう。
 
-開発ツール：VUE CLI(v.2)
+## 開発ツール
+VUE CLI(v.2)
 I18n (https://github.com/kazupon)
 API：Covid Tracker (https://covid19api.com/）
 
-スタイリングについて
+## スタイリングについて
 今回Tailwindに関する説明しないのですが、コードにスタイルを書き込んでいます。
+public/index.htmlにCDNを貼る場合
+```
+<script src="https://cdn.tailwindcss.com"></script>
+```
+OR
 下記のページに沿ってインストールすれば使っているスタイルが反映されます。（頑張って！）
 https://medium.com/featurepreneur/set-up-tailwind-css-for-your-vue-js-app-5a8801fd0a55
-
 
 インストール方法
 ```
@@ -63,7 +68,6 @@ src/main.jsにi18nパッケージをimportしましょう。
 import Vue from 'vue'
 import App from './App.vue'
 import VueI18n from 'vue-i18n';
-import './index.css';
 
 Vue.use(VueI18n);
 
@@ -104,7 +108,7 @@ componentsフォルダーに移動して、2つコンポネートを作成しま
 １つ目：Test.vue (言語をテストするためのもの)
 ```
 <template>
-  <div>
+  <div class="text-3xl text-center bg-blue-800 text-white p-4 mb-10 ">
     {{ $t('titles.title')}}
   </div>
 </template>
@@ -146,9 +150,10 @@ export default {
 App.js
 ```js
 <template>
-  <div>
+  <div class="w-3/4 items-center m-auto">
     <SwitchLang />
     <Test />
+    <DataBox/>
   </div>
 </template>
 
