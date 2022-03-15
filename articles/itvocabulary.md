@@ -1,18 +1,17 @@
 ---
-title: "エンジニアとして知っておくと便利な英単語（A,B,C編）"
+title: "エンジニアとして知っておくべき英単語（初編）"
 emoji: "🤓"
 type: "idea"
-topics: ['IT''英語']
+topics: ['IT','英語','idea']
 published: True
 ---
-英語できなくても、プログラミングできると言われていますが、変数名を決めたりエラーを読んだりすると少し英語わかると便利ですよね？
-ということで、よく見かける英単語をまとめようとおもいます。追加すべき単語あればぜひぜひコメント欄に残してください。
+英語できなくても、プログラミングできるけど、変数名を決めたりエラーを読んだりすると少し英語わかったら便利だな〜と思ったことありませんか？
+この投稿でA,B,C,D,E,F編を紹介します。
 
-よろしくお願いします
-
+追加すべき単語あればぜひぜひコメント欄に残してください。
 
 ### A 
-
+```
 abstract 抽象的（無形）
 abstraction　抽出
 activate　アクティブ化
@@ -31,8 +30,9 @@ asynchronous　　非同期
 attribute　属性
 authentication　認証する
 authorization　権限を与える
-
+```
 ### B
+```
 border 罫線
 boxing ボックス化
 background　バックグラウンド
@@ -44,8 +44,9 @@ breakpoint 一時停止点
 binding 繋ぐ
 batch (まとめる)
 バッチ処理もまとめて連続的に実行するからそのように
-
+```
 ### C
+```
 constraint 制約
 cache　キャッシュ
 casting　配役する
@@ -61,4 +62,67 @@ construct　設計する
 context 文脈
 cryptography　暗号法
 custom （個人の仕様に従って作られる）
-
+```
+### D 
+```
+data
+data source
+data structure
+database
+database owner
+database role
+database schema
+datagram
+dataset
+deallocate
+debug
+decay
+declaration
+default
+defer
+definition
+delegate
+delegation
+deploy
+derived class
+design patter 
+destroy
+device
+dialog
+digest
+dispach
+distribute 配送、配る
+dump 捨てる
+```
+### E 
+```
+efficiency 効率
+efficient　効率よく
+encapsulation 
+end user　エンドユーザー
+entity　実態
+enumeration (enum)　数える
+equal　同様
+equality 対等
+escape　脱出
+event　イベント
+evidence　証拠
+exception 例外
+exit 脱出
+export　移出
+expression 表現
+```
+### F
+```
+field　範囲
+fetch 読み込む
+file　ファイル
+finalization　完了
+finalize　修了
+flag　旗
+flush　駆り立てる
+formal　正式
+forward　
+functionality　機能
+functor 関手 
+```
