@@ -18,7 +18,7 @@ https://webst8.com/blog/css-transition/
 
 ### 最終的にこうなります！
 
-![](https://https://ogorei.tumblr.com/post/679030342918799360/simple-scroll)
+![](https://i.gyazo.com/cccb9f1008ad73b29be9c47e01c37db6.gif)
 
 
 ## VUE環境を整える
@@ -26,12 +26,10 @@ https://webst8.com/blog/css-transition/
 スタートファイルをクローンしましょう。
 ```
 git clone git@github.com:ogorei/simple-scroll-starter.git
-
 ```
 ダウンロードできたらエディターを開いて必要なパッケージをインストールします。
 ```
 npm install
-
 ```
 ローカルホストで表示されているか確認します。
 ```
