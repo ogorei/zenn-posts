@@ -119,27 +119,26 @@ if (elTop < windowHeight - elVisible) {
 reveal関数はこうなります。
 
 ```
-function reveal() {
+  reveal() {
   const reveals = document.querySelectorAll(".reveal");
-  for (let i = 0; i < reveals.length; i++) {
-    const windowHeight = window.innerHeight;
-    const elTop = reveals[i].getBoundingClientRect().top;
-    const elVisible = 150;
-    if (elTop < windowHeight - elVisible) {
-      reveals[i].classList.add("active");
-    } else {
-      reveals[i].classList.remove("active");
+    for (let i = 0; i < reveals.length; i++) {
+      const windowHeight = window.innerHeight;
+      const elTop = reveals[i].getBoundingClientRect().top;
+      const elVisible = 150;
+      if (elTop < windowHeight - elVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
     }
   }
-}
 
 ```
 
 最後に、created()のタイミングでイベントをロードするように設定して完了です。
 
 ```
-window.addEventListener("scroll", reveal);
-reveal();
+    window.addEventListener("scroll", this.reveal);
 
 ```
 
