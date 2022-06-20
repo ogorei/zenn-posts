@@ -31,3 +31,12 @@ run unit tests と　sign buildsを選択します。
 ```
 open ios/xxxx.xcodeproj
 ```
+2. 自動ログインを外します（外さないと他のデバイスからアプリを見れなくなる）
+テストする際にログインが必要ですので、provisioning profileを作成して権限を決めます。
+役に立つ記事
+https://www.musen-connect.co.jp/blog/course/product/ios-ble-dev-provisioning-profile/
+https://support.staffbase.com/hc/en-us/articles/115003598691-Creating-the-iOS-Provisioning-Profiles
+
+3. schemeを編集する。
+（デフォルトにしているとテストの目的はDebugとなる）
+今回はリリースする目的のアプリをテストするので、productionを設定します。
